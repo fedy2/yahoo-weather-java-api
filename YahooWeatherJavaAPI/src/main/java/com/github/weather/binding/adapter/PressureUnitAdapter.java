@@ -12,7 +12,7 @@ import com.github.weather.data.unit.PressureUnit;
 
 /**
  * Units of barometric pressure adapter, in for pounds per square inch or mb for millibars.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 public class PressureUnitAdapter extends XmlAdapter<String, PressureUnit> {

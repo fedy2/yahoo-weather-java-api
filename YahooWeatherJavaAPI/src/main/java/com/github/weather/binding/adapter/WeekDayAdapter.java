@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import com.github.weather.data.unit.WeekDay;
 
 /**
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 public class WeekDayAdapter extends XmlAdapter<String, WeekDay> {

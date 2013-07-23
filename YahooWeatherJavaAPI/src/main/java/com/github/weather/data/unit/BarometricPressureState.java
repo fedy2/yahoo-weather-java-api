@@ -5,7 +5,7 @@ package com.github.weather.data.unit;
 
 /**
  * Barometric pressure states.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 public enum BarometricPressureState {
 	/**

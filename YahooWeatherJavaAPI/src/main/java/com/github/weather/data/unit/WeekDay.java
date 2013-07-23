@@ -1,7 +1,7 @@
 package com.github.weather.data.unit;
 
 /**
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 public enum WeekDay {
 	MON,

@@ -12,7 +12,7 @@ import com.github.weather.data.unit.DegreeUnit;
 
 /**
  * Degree unit adapter: f for Fahrenheit or c for Celsius (character)
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 public class DegreeUnitAdapter extends XmlAdapter<String, DegreeUnit> {
 

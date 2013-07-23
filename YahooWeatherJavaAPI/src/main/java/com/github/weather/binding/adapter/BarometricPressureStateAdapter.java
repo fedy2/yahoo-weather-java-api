@@ -13,7 +13,7 @@ import com.github.weather.data.unit.BarometricPressureState;
 /**
  * State of the barometric pressure adapter: steady (0), rising (1), or falling (2). 
  * (integer: 0, 1, 2)
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 public class BarometricPressureStateAdapter extends	XmlAdapter<Integer, BarometricPressureState> {
 

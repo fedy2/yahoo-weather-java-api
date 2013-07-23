@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 public class RFC822DateAdapter extends XmlAdapter<String, Date> {

@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Information about wind.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 @XmlRootElement
 public class Wind {

@@ -18,7 +18,7 @@ import com.github.weather.data.unit.SpeedUnit;
 
 /**
  * Units for various aspects of the forecast.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 @XmlRootElement
 public class Units {

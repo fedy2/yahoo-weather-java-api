@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import com.github.weather.binding.Constants;
 
 /**
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 @XmlAccessorType(XmlAccessType.FIELD) 

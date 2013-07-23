@@ -12,7 +12,7 @@ import com.github.weather.data.unit.BarometricPressureState;
 
 /**
  * Information about atmospheric pressure, humidity, and visibility.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 @XmlRootElement
 public class Atmosphere {

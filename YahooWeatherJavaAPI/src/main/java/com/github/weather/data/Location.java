@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.*;
 
 /**
  * Weather location.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 @XmlRootElement
 public class Location {

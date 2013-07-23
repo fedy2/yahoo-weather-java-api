@@ -12,7 +12,7 @@ import com.github.weather.data.unit.Time;
 
 /**
  * Information about astronomical conditions.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 @XmlRootElement
 public class Astronomy {

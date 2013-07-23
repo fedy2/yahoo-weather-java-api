@@ -14,7 +14,7 @@ import com.github.weather.binding.Constants;
 import com.github.weather.binding.adapter.RFC822DateAdapter;
 
 /**
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 @XmlRootElement

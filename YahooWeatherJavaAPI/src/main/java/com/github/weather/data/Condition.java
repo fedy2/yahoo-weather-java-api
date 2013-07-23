@@ -13,7 +13,7 @@ import com.github.weather.binding.adapter.RFC822DateAdapter;
 
 /**
  * Weather conditions.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 @XmlRootElement
 public class Condition {

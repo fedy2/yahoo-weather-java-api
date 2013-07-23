@@ -4,7 +4,7 @@
 package com.github.weather.binding;
 
 /**
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 public class Constants {

@@ -15,7 +15,7 @@ import com.github.weather.data.unit.WeekDay;
 
 /**
  * The weather forecast for a specific day.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 @XmlRootElement
 public class Forecast {

@@ -16,7 +16,7 @@ import com.github.weather.data.unit.TimeConvention;
 
 /**
  * The time is a string in a local time format of "h:mm am/pm", for example "7:02 am" (string)
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 public class TimeAdapter extends XmlAdapter<String, Time> {

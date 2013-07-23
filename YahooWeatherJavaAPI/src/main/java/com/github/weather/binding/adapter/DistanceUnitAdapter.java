@@ -12,7 +12,7 @@ import com.github.weather.data.unit.DistanceUnit;
 
 /**
  * Units for distance adapter, mi for miles or km for kilometers.
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  */
 public class DistanceUnitAdapter extends XmlAdapter<String, DistanceUnit> {
 

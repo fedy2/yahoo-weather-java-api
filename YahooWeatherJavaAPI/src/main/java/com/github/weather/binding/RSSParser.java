@@ -12,7 +12,7 @@ import javax.xml.bind.Unmarshaller;
 import com.github.weather.data.Rss;
 
 /**
- * @author fedy2
+ * @author "Federico De Faveri defaveri@gmail.com"
  *
  */
 public class RSSParser {
