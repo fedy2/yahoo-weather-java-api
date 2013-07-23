@@ -8,7 +8,7 @@
 		<version>7</version>
 	</parent>
 	
-	<groupId>com.github.yahooweatherjavaapi</groupId>
+	<groupId>com.github.fedy2</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 	<artifactId>yahoo-weather-java-api</artifactId>
 	
