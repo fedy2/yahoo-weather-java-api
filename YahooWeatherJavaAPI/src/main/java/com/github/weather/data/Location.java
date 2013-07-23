@@ -52,6 +52,7 @@ public class Location {
 	}
 
 	/**
+	 * Returns the state, territory, or region, if given
 	 * @return the region
 	 */
 	public String getRegion() {
@@ -59,6 +60,7 @@ public class Location {
 	}
 
 	/**
+	 * Returns the two-character country code.
 	 * @return the country
 	 */
 	public String getCountry() {

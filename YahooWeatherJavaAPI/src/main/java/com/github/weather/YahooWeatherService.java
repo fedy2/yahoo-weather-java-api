@@ -23,8 +23,8 @@ import com.github.weather.data.Rss;
 import com.github.weather.data.unit.DegreeUnit;
 
 /**
+ * Main access point for the Yahoo weather service.
  * @author "Federico De Faveri defaveri@gmail.com"
- *
  */
 public class YahooWeatherService {
 	
@@ -42,6 +42,14 @@ public class YahooWeatherService {
 		parser = new RSSParser();
 	}
 	
+	/**
+	 * Gets the Weather RSS feed.
+	 * @param woeid the location WOEID.
+	 * @param unit the degrees units.
+	 * @return the retrieved Channel.
+	 * @throws JAXBException if an error occurs parsing the response.
+	 * @throws IOException if an error occurs communicating with the service.
+	 */
 	public Channel getForecast(String woeid, DegreeUnit unit) throws JAXBException, IOException
 	{
 		logger.trace("getForecast woeid: {} unit: {}", woeid, unit.toString());
@@ -53,16 +61,17 @@ public class YahooWeatherService {
 		return rss.getChannel();
 	}
 	
+	/**
+	 * Composes the URL with the specified parameters.
+	 * @param woeid the WOEID.
+	 * @param unit the unit.
+	 * @return the composed URL.
+	 */
 	protected String composeUrl(String woeid, DegreeUnit unit)
 	{
 		StringBuilder url = new StringBuilder(WEATHER_SERVICE_BASE_URL);
-		url.append('?');
-		url.append(WOEID_PARAMETER_NAME);
-		url.append('=');
-		url.append(woeid);
-		url.append('&');
-		url.append(DEGREES_PARAMETER_NAME);
-		url.append('=');
+		url.append('?').append(WOEID_PARAMETER_NAME).append('=').append(woeid);
+		url.append('&').append(DEGREES_PARAMETER_NAME).append('=');
 		switch (unit) {
 			case CELSIUS: url.append('c'); break;
 			case FAHRENHEIT: url.append('f'); break;
@@ -70,6 +79,12 @@ public class YahooWeatherService {
 		return url.toString();		
 	}
 	
+	/**
+	 * Open the connection to the service and retrieves the data.
+	 * @param serviceUrl the service URL.
+	 * @return the service response.
+	 * @throws IOException if an error occurs during the connection.
+	 */
 	protected String retrieveRSS(String serviceUrl) throws IOException
 	{
 		URL url = new URL(serviceUrl);
@@ -84,7 +99,14 @@ public class YahooWeatherService {
 		return writer.toString();
 	}
 	
-	public static long copy(Reader input, Writer output) throws IOException {
+	/**
+	 * Copy the input reader into the output writer.
+	 * @param input the input reader.
+	 * @param output the output writer.
+	 * @return the number of char copied.
+	 * @throws IOException if an error occurs during the copy.
+	 */
+	protected static long copy(Reader input, Writer output) throws IOException {
         char[] buffer = new char[DEFAULT_BUFFER_SIZE];
         long count = 0;
         int n = 0;

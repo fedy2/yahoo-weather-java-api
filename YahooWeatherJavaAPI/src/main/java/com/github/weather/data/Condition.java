@@ -60,6 +60,7 @@ public class Condition {
 	}
 
 	/**
+	 * Returns a textual description of conditions, for example, "Partly Cloudy"
 	 * @return the text
 	 */
 	public String getText() {
@@ -67,6 +68,7 @@ public class Condition {
 	}
 
 	/**
+	 * Returns the condition code for this forecast.
 	 * @return the code
 	 */
 	public int getCode() {
@@ -74,6 +76,7 @@ public class Condition {
 	}
 
 	/**
+	 * Returns the current temperature, in the units specified by the units field of {@link Channel} class.
 	 * @return the temp
 	 */
 	public int getTemp() {
@@ -81,6 +84,7 @@ public class Condition {
 	}
 
 	/**
+	 * Returns the current date and time for which this forecast applies.
 	 * @return the date
 	 */
 	public Date getDate() {

@@ -44,6 +44,7 @@ public class Astronomy {
 	}
 
 	/**
+	 * Returns the today's sunrise time.
 	 * @return the sunrise
 	 */
 	public Time getSunrise() {
@@ -51,6 +52,7 @@ public class Astronomy {
 	}
 
 	/**
+	 * Returns today's sunset time.
 	 * @return the sunset
 	 */
 	public Time getSunset() {

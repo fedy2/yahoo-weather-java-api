@@ -64,7 +64,7 @@ public class Item {
 	protected float geoLong;
 	
 	/**
-	 * he current weather conditions.
+	 * The current weather conditions.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI)
 	protected Condition condition;
@@ -79,6 +79,7 @@ public class Item {
 	{}
 
 	/**
+	 * Returns the forecast title and time, for example "Conditions for New York, NY at 1:51 pm EST".
 	 * @return the title
 	 */
 	public String getTitle() {
@@ -86,6 +87,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns the Yahoo! Weather URL for this forecast.
 	 * @return the link
 	 */
 	public String getLink() {
@@ -93,6 +95,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns a simple summary of the current conditions and tomorrow's forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.
 	 * @return the description
 	 */
 	public String getDescription() {
@@ -100,6 +103,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns an unique identifier for the forecast, made up of the location ID, the date, and the time.
 	 * @return the guid
 	 */
 	public String getGuid() {
@@ -107,6 +111,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns the date and time this forecast was posted.
 	 * @return the pubDate
 	 */
 	public Date getPubDate() {
@@ -114,6 +119,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns the latitude of the location.
 	 * @return the geoLat
 	 */
 	public float getGeoLat() {
@@ -121,6 +127,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns the longitude of the location.
 	 * @return the geoLong
 	 */
 	public float getGeoLong() {
@@ -128,6 +135,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns the current weather conditions.
 	 * @return the condition
 	 */
 	public Condition getCondition() {
@@ -135,6 +143,7 @@ public class Item {
 	}
 
 	/**
+	 * Returns the weather forecast for specific days.
 	 * @return the forecasts
 	 */
 	public List<Forecast> getForecasts() {

@@ -103,6 +103,7 @@ public class Channel {
 	{}
 
 	/**
+	 * Returns the title of the feed, which includes the location city. For example "Yahoo! Weather - Sunnyvale, CA"
 	 * @return the title
 	 */
 	public String getTitle() {
@@ -110,13 +111,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param title the title to set
-	 */
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	/**
+	 * Returns the URL for the Weather page of the forecast for this location. For example http://us.rd.yahoo.com/dailynews/rss/weather/ Sunnyvale__CA/ *http://weather.yahoo.com/ forecast/USCA1116_f.html
 	 * @return the link
 	 */
 	public String getLink() {
@@ -124,13 +119,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param link the link to set
-	 */
-	public void setLink(String link) {
-		this.link = link;
-	}
-
-	/**
+	 * Returns the language of the weather forecast, for example, en-us for US English.
 	 * @return the language
 	 */
 	public String getLanguage() {
@@ -138,13 +127,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param language the language to set
-	 */
-	public void setLanguage(String language) {
-		this.language = language;
-	}
-
-	/**
+	 * Returns the overall description of the feed including the location, for example "Yahoo! Weather for Sunnyvale, CA".
 	 * @return the description
 	 */
 	public String getDescription() {
@@ -152,13 +135,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param description the description to set
-	 */
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	/**
+	 * Returns the last time the feed was updated. The format is in the date format defined by RFC822 Section 5, for example Mon, 256 Sep 17:25:18 -0700.
 	 * @return the lastBuildDate
 	 */
 	public Date getLastBuildDate() {
@@ -166,13 +143,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param lastBuildDate the lastBuildDate to set
-	 */
-	public void setLastBuildDate(Date lastBuildDate) {
-		this.lastBuildDate = lastBuildDate;
-	}
-
-	/**
+	 * Returns the time to Live; how long in minutes this feed should be cached.
 	 * @return the ttl
 	 */
 	public long getTtl() {
@@ -180,13 +151,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param ttl the ttl to set
-	 */
-	public void setTtl(long ttl) {
-		this.ttl = ttl;
-	}
-
-	/**
+	 * Returns the location of this forecast.
 	 * @return the location
 	 */
 	public Location getLocation() {
@@ -194,13 +159,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param location the location to set
-	 */
-	public void setLocation(Location location) {
-		this.location = location;
-	}
-
-	/**
+	 * Returns the units for various aspects of the forecast.
 	 * @return the units
 	 */
 	public Units getUnits() {
@@ -208,13 +167,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param units the units to set
-	 */
-	public void setUnits(Units units) {
-		this.units = units;
-	}
-
-	/**
+	 * Returns the forecast information about wind.
 	 * @return the wind
 	 */
 	public Wind getWind() {
@@ -222,13 +175,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param wind the wind to set
-	 */
-	public void setWind(Wind wind) {
-		this.wind = wind;
-	}
-
-	/**
+	 * Returns the forecast information about current atmospheric pressure, humidity, and visibility.
 	 * @return the atmosphere
 	 */
 	public Atmosphere getAtmosphere() {
@@ -236,13 +183,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param atmosphere the atmosphere to set
-	 */
-	public void setAtmosphere(Atmosphere atmosphere) {
-		this.atmosphere = atmosphere;
-	}
-
-	/**
+	 * Returns the forecast information about current astronomical conditions.
 	 * @return the astronomy
 	 */
 	public Astronomy getAstronomy() {
@@ -250,13 +191,7 @@ public class Channel {
 	}
 
 	/**
-	 * @param astronomy the astronomy to set
-	 */
-	public void setAstronomy(Astronomy astronomy) {
-		this.astronomy = astronomy;
-	}
-
-	/**
+	 * Returns the image used to identify this feed.
 	 * @return the image
 	 */
 	public Image getImage() {
@@ -264,24 +199,11 @@ public class Channel {
 	}
 
 	/**
-	 * @param image the image to set
-	 */
-	public void setImage(Image image) {
-		this.image = image;
-	}
-
-	/**
+	 * Returns the local weather conditions and forecast for a specific location.
 	 * @return the item
 	 */
 	public Item getItem() {
 		return item;
-	}
-
-	/**
-	 * @param item the item to set
-	 */
-	public void setItem(Item item) {
-		this.item = item;
 	}
 
 	/**

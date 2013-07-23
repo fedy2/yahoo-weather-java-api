@@ -63,6 +63,7 @@ public class Image {
 	}
 
 	/**
+	 * Return the title of the image, for example "Yahoo! Weather".
 	 * @return the title
 	 */
 	public String getTitle() {
@@ -70,6 +71,7 @@ public class Image {
 	}
 
 	/**
+	 * Returns the URL of Yahoo! Weather.
 	 * @return the link
 	 */
 	public String getLink() {
@@ -77,6 +79,7 @@ public class Image {
 	}
 
 	/**
+	 * Returns the URL of the image.
 	 * @return the url
 	 */
 	public String getUrl() {
@@ -84,6 +87,7 @@ public class Image {
 	}
 
 	/**
+	 * Returns the width of the image, in pixels.
 	 * @return the width
 	 */
 	public int getWidth() {
@@ -91,6 +95,7 @@ public class Image {
 	}
 
 	/**
+	 * Returns the height of the image, in pixels.
 	 * @return the height
 	 */
 	public int getHeight() {

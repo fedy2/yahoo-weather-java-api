@@ -79,6 +79,7 @@ public class Forecast {
 	}
 
 	/**
+	 * Returns the day of the week to which this forecast applies.
 	 * @return the day
 	 */
 	public WeekDay getDay() {
@@ -86,6 +87,7 @@ public class Forecast {
 	}
 
 	/**
+	 * Returns the date to which this forecast applies.
 	 * @return the date
 	 */
 	public Date getDate() {
@@ -93,6 +95,7 @@ public class Forecast {
 	}
 
 	/**
+	 * Returns the forecasted low temperature for this day, in the units specified by the unit field in the {@link Channel} class.
 	 * @return the low
 	 */
 	public int getLow() {
@@ -100,6 +103,7 @@ public class Forecast {
 	}
 
 	/**
+	 * Returns the forecasted high temperature for this day, in the units specified by the unit field in the {@link Channel} class.
 	 * @return the high
 	 */
 	public int getHigh() {
@@ -107,6 +111,7 @@ public class Forecast {
 	}
 
 	/**
+	 * Returns a textual description of conditions, for example, "Partly Cloudy"
 	 * @return the text
 	 */
 	public String getText() {
@@ -114,6 +119,8 @@ public class Forecast {
 	}
 
 	/**
+	 * Returns the condition code for this forecast.
+	 * The code are listed here: http://developer.yahoo.com/weather/#codes
 	 * @return the code
 	 */
 	public int getCode() {

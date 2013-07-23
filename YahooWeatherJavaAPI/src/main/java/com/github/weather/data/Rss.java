@@ -20,6 +20,7 @@ public class Rss {
 	{}
 
 	/**
+	 * Returns the channel.
 	 * @return the channel
 	 */
 	public Channel getChannel() {

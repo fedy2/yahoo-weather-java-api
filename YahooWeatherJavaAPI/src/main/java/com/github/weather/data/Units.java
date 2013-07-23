@@ -68,6 +68,7 @@ public class Units {
 	}
 
 	/**
+	 * Returns the temperature unit.
 	 * @return the temperature
 	 */
 	public DegreeUnit getTemperature() {
@@ -75,6 +76,7 @@ public class Units {
 	}
 
 	/**
+	 * Returns the distance unit.
 	 * @return the distance
 	 */
 	public DistanceUnit getDistance() {
@@ -82,6 +84,7 @@ public class Units {
 	}
 
 	/**
+	 * Returns the units of barometric pressure.
 	 * @return the pressure
 	 */
 	public PressureUnit getPressure() {
@@ -89,6 +92,7 @@ public class Units {
 	}
 
 	/**
+	 * Returns the units of speed.
 	 * @return the speed
 	 */
 	public SpeedUnit getSpeed() {

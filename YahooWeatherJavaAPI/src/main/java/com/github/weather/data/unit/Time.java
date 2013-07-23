@@ -25,6 +25,7 @@ public class Time {
 	}
 
 	/**
+	 * Returns the hours.
 	 * @return the hours
 	 */
 	public int getHours() {
@@ -32,6 +33,7 @@ public class Time {
 	}
 
 	/**
+	 * Returns the minutes.
 	 * @return the minutes
 	 */
 	public int getMinutes() {
@@ -39,6 +41,7 @@ public class Time {
 	}
 
 	/**
+	 * Returns the time convention.
 	 * @return the convention
 	 */
 	public TimeConvention getConvention() {

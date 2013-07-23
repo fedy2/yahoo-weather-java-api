@@ -47,6 +47,7 @@ public class Wind {
 	}
 
 	/**
+	 * Returns the wind chill in degrees.
 	 * @return the chill
 	 */
 	public int getChill() {
@@ -54,6 +55,7 @@ public class Wind {
 	}
 
 	/**
+	 * Returns the wind direction, in degrees.
 	 * @return the direction
 	 */
 	public int getDirection() {
@@ -61,6 +63,8 @@ public class Wind {
 	}
 
 	/**
+	 * Returns the wind speed, in the units specified in the speed attribute of the wind speed, 
+	 * in the units specified in the speed attribute of the units field of {@link Channel} class. 
 	 * @return the speed
 	 */
 	public float getSpeed() {

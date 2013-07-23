@@ -62,6 +62,7 @@ public class Atmosphere {
 	}
 
 	/**
+	 * Returns the humidity, in percent.
 	 * @return the humidity
 	 */
 	public int getHumidity() {
@@ -69,6 +70,9 @@ public class Atmosphere {
 	}
 
 	/**
+	 * Returns the visibility, in the units specified by the distance attribute of the units field in the {@link Channel} class. 
+	 * Note that the visibility is specified as the actual value * 100. 
+	 * For example, a visibility of 16.5 miles will be specified as 1650. A visibility of 14 kilometers will appear as 1400.
 	 * @return the visibility
 	 */
 	public float getVisibility() {
@@ -76,6 +80,7 @@ public class Atmosphere {
 	}
 
 	/**
+	 * Returns the barometric pressure, in the units specified by the pressure attribute of the units field in the {@link Channel} class.
 	 * @return the pressure
 	 */
 	public float getPressure() {
@@ -83,6 +88,7 @@ public class Atmosphere {
 	}
 
 	/**
+	 * Returns the state of the barometric pressure.
 	 * @return the rising
 	 */
 	public BarometricPressureState getRising() {
