@@ -18,16 +18,16 @@ import org.slf4j.LoggerFactory;
 public class RFC822DateAdapter extends XmlAdapter<String, Date> {
 
 	public static final SimpleDateFormat rfc822DateFormats[] = new SimpleDateFormat[] {
-		new SimpleDateFormat("EEE, d MMM yy HH:mm:ss z"),
-		new SimpleDateFormat("EEE, d MMM yy HH:mm z"),
-		new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss z"),
-		new SimpleDateFormat("EEE, d MMM yyyy HH:mm z"),
-		new SimpleDateFormat("d MMM yy HH:mm z"),
-		new SimpleDateFormat("d MMM yy HH:mm:ss z"),
-		new SimpleDateFormat("d MMM yyyy HH:mm z"),
-		new SimpleDateFormat("d MMM yyyy HH:mm:ss z"),
+		new SimpleDateFormat("EEE, dd MMM yy HH:mm:ss z"),
+		new SimpleDateFormat("EEE, dd MMM yy HH:mm z"),
+		new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z"),
+		new SimpleDateFormat("EEE, dd MMM yyyy HH:mm z"),
+		new SimpleDateFormat("dd MMM yy HH:mm z"),
+		new SimpleDateFormat("dd MMM yy HH:mm:ss z"),
+		new SimpleDateFormat("dd MMM yyyy HH:mm z"),
+		new SimpleDateFormat("dd MMM yyyy HH:mm:ss z"),
 		//exception to RFC 822 format used by Yahoo "Thu, 22 Dec 2011 1:50 pm CET"
-		new SimpleDateFormat("EEE, d MMM yyyy HH:mm a z")}; 
+		new SimpleDateFormat("EEE, dd MMM yyyy HH:mm a z")}; 
 
 	protected Logger logger = LoggerFactory.getLogger(RFC822DateAdapter.class);
 	
