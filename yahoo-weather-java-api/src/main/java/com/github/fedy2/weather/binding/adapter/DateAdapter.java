@@ -19,7 +19,7 @@ public class DateAdapter extends XmlAdapter<String, Date> {
 
 	protected Logger logger = LoggerFactory.getLogger(DateAdapter.class);
 
-	protected SimpleDateFormat dateFormat = new SimpleDateFormat("d MMM yyyy");
+	protected SimpleDateFormat dateFormat = new SimpleDateFormat("d MMM yyyy", Locale.US);
 
 	/**
 	 * {@inheritDoc}
