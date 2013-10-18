@@ -5,6 +5,10 @@ package com.github.fedy2.weather.data;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+import com.github.fedy2.weather.binding.adapter.FloatAdapter;
+import com.github.fedy2.weather.binding.adapter.IntegerAdapter;
 
 /**
  * Information about wind.
@@ -16,21 +20,24 @@ public class Wind {
 	/**
 	 * Wind chill in degrees.
 	 */
-	@XmlAttribute
-	protected int chill;
+	@XmlAttribute(required=false)
+	@XmlJavaTypeAdapter(IntegerAdapter.class)
+	protected Integer chill;
 	
 	/**
 	 * Wind direction, in degrees.
 	 */
-	@XmlAttribute
-	protected int direction;
+	@XmlAttribute(required=false)
+	@XmlJavaTypeAdapter(IntegerAdapter.class)
+	protected Integer direction;
 	
 	/**
 	 * Wind speed, in the units specified in the speed attribute of the wind speed, 
 	 * in the units specified in the speed attribute of the units field of {@link Channel} class. 
 	 */
-	@XmlAttribute
-	protected float speed;
+	@XmlAttribute(required=false)
+	@XmlJavaTypeAdapter(FloatAdapter.class)
+	protected Float speed;
 
 	public Wind()
 	{}
@@ -40,7 +47,7 @@ public class Wind {
 	 * @param direction
 	 * @param speed
 	 */
-	public Wind(int chill, int direction, float speed) {
+	public Wind(Integer chill, Integer direction, Float speed) {
 		this.chill = chill;
 		this.direction = direction;
 		this.speed = speed;
@@ -50,7 +57,7 @@ public class Wind {
 	 * Returns the wind chill in degrees.
 	 * @return the chill
 	 */
-	public int getChill() {
+	public Integer getChill() {
 		return chill;
 	}
 
@@ -58,7 +65,7 @@ public class Wind {
 	 * Returns the wind direction, in degrees.
 	 * @return the direction
 	 */
-	public int getDirection() {
+	public Integer getDirection() {
 		return direction;
 	}
 
@@ -67,7 +74,7 @@ public class Wind {
 	 * in the units specified in the speed attribute of the units field of {@link Channel} class. 
 	 * @return the speed
 	 */
-	public float getSpeed() {
+	public Float getSpeed() {
 		return speed;
 	}
 
