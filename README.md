@@ -18,5 +18,11 @@ Dependency declaration:
     <dependency>
          <groupId>com.github.fedy2</groupId>
          <artifactId>yahoo-weather-java-api</artifactId>
-         <version>1.0.1</version>
+         <version>1.1.0</version>
     </dependency>
+
+Changelog:
+
+    * 1.1.0 Updated data model: Atmosphere and Wind numeric values have been replaced by corresponding Classes (int to Integer and float to Float) in order to support "missing" values in Weather system response.
+    * 1.0.1 fixed issues on Date parsing and local settings
+    * 1.0.0 first release
