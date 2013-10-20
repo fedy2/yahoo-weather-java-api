@@ -24,12 +24,8 @@ public class Example {
 	 */
 	public static void main(String[] args) throws JAXBException, IOException {
 		YahooWeatherService service = new YahooWeatherService();
-		for (int i = 2154617; i<2154717; i++) {
-			System.out.print("Testing "+i+" ");
-		Channel channel = service.getForecast(String.valueOf(i), DegreeUnit.CELSIUS);
+		Channel channel = service.getForecast("670807", DegreeUnit.CELSIUS);
 		System.out.println(channel.getDescription());
-		}
-
 	}
 
 }
