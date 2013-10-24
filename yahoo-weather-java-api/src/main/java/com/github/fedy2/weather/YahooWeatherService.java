@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -36,10 +37,18 @@ public class YahooWeatherService {
 
 	protected Logger logger = LoggerFactory.getLogger(YahooWeatherService.class);
 	protected RSSParser parser;
+	protected Proxy proxy;
 	
 	public YahooWeatherService() throws JAXBException
 	{
-		parser = new RSSParser();
+		this.parser = new RSSParser();
+		this.proxy = Proxy.NO_PROXY;
+	}
+	
+	public YahooWeatherService(Proxy proxy) throws JAXBException
+	{
+		this.parser = new RSSParser();
+		this.proxy = proxy;
 	}
 	
 	/**
@@ -88,7 +97,7 @@ public class YahooWeatherService {
 	protected String retrieveRSS(String serviceUrl) throws IOException
 	{
 		URL url = new URL(serviceUrl);
-		URLConnection connection = url.openConnection();
+		URLConnection connection = url.openConnection(proxy);
 		InputStream is = connection.getInputStream();
 		InputStreamReader reader = new InputStreamReader(is);
 		StringWriter writer = new StringWriter();
