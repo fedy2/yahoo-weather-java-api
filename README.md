@@ -23,6 +23,7 @@ Dependency declaration:
 
 Changelog:
 
+    * 1.2.0 YahooWeatherService constructor now accepts a Proxy to be used during service connections
     * 1.1.0 Updated data model: Atmosphere and Wind numeric values have been replaced by corresponding Classes (int to Integer and float to Float) in order to support "missing" values in Weather system response.
     * 1.0.1 fixed issues on Date parsing and local settings
     * 1.0.0 first release
