@@ -28,28 +28,28 @@ public class Units {
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(DegreeUnitAdapter.class)
-	protected DegreeUnit temperature;
+	private DegreeUnit temperature;
 	
 	/**
 	 * Distance unit.
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(DistanceUnitAdapter.class)
-	protected DistanceUnit distance;
+	private DistanceUnit distance;
 	
 	/**
 	 * Units of barometric pressure.
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(PressureUnitAdapter.class)
-	protected PressureUnit pressure;
+	private PressureUnit pressure;
 	
 	/**
 	 * Units of speed.
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(SpeedUnitAdapter.class)
-	protected SpeedUnit speed;
+	private SpeedUnit speed;
 	
 	public Units(){}
 

@@ -24,7 +24,7 @@ public class Atmosphere {
 	 */
 	@XmlAttribute(required=false)
 	@XmlJavaTypeAdapter(IntegerAdapter.class)
-	protected Integer humidity;
+	private Integer humidity;
 	
 	/**
 	 * Visibility, in the units specified by the distance attribute of the units field in the {@link Channel} class. 
@@ -33,21 +33,21 @@ public class Atmosphere {
 	 */
 	@XmlAttribute(required=false)
 	@XmlJavaTypeAdapter(FloatAdapter.class)
-	protected Float visibility;
+	private Float visibility;
 	
 	/**
 	 * Barometric pressure, in the units specified by the pressure attribute of the units field in the {@link Channel} class.
 	 */
 	@XmlAttribute(required=false)
 	@XmlJavaTypeAdapter(FloatAdapter.class)
-	protected Float pressure;
+	private Float pressure;
 	
 	/**
 	 * state of the barometric pressure
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(BarometricPressureStateAdapter.class)
-	protected BarometricPressureState rising;
+	private BarometricPressureState rising;
 
 	public Atmosphere()
 	{}

@@ -22,14 +22,14 @@ public class Wind {
 	 */
 	@XmlAttribute(required=false)
 	@XmlJavaTypeAdapter(IntegerAdapter.class)
-	protected Integer chill;
+	private Integer chill;
 	
 	/**
 	 * Wind direction, in degrees.
 	 */
 	@XmlAttribute(required=false)
 	@XmlJavaTypeAdapter(IntegerAdapter.class)
-	protected Integer direction;
+	private Integer direction;
 	
 	/**
 	 * Wind speed, in the units specified in the speed attribute of the wind speed, 
@@ -37,7 +37,7 @@ public class Wind {
 	 */
 	@XmlAttribute(required=false)
 	@XmlJavaTypeAdapter(FloatAdapter.class)
-	protected Float speed;
+	private Float speed;
 
 	public Wind()
 	{}

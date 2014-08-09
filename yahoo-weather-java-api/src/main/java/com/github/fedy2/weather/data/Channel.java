@@ -24,80 +24,80 @@ public class Channel {
 	 * The title of the feed, which includes the location city. For example "Yahoo! Weather - Sunnyvale, CA"
 	 */
 	@XmlElement
-	public String title;
+	private String title;
 	
 	/**
 	 * The URL for the Weather page of the forecast for this location. For example http://us.rd.yahoo.com/dailynews/rss/weather/ Sunnyvale__CA/ *http://weather.yahoo.com/ forecast/USCA1116_f.html
 	 */
 	@XmlElement
-	public String link;
+	private String link;
 
 	/**
 	 * The language of the weather forecast, for example, en-us for US English.
 	 */
 	@XmlElement
-	public String language;
+	private String language;
 	
 	/**
 	 * The overall description of the feed including the location, for example "Yahoo! Weather for Sunnyvale, CA"
 	 */
 	@XmlElement
-	public String description;
+	private String description;
 	
 	/**
 	 * The last time the feed was updated. The format is in the date format defined by RFC822 Section 5, for example Mon, 256 Sep 17:25:18 -0700.
 	 */
 	@XmlElement
-	public Date lastBuildDate;
+	private Date lastBuildDate;
 
 	/**
 	 * Time to Live; how long in minutes this feed should be cached.
 	 */
 	@XmlElement
-	public long ttl;
+	private long ttl;
 	
 	/**
 	 * The location of this forecast.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI)
-	public Location location;
+	private Location location;
 	
 	/**
 	 * Units for various aspects of the forecast.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI)
-	public Units units;
+	private Units units;
 	
 	/**
 	 * Forecast information about wind.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI)
-	public Wind wind;
+	private Wind wind;
 	
 	/**
 	 * Forecast information about current atmospheric pressure, humidity, and visibility.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI)
-	public Atmosphere atmosphere;
+	private Atmosphere atmosphere;
 	
 	/**
 	 * Forecast information about current astronomical conditions.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI)
-	public Astronomy astronomy;
+	private Astronomy astronomy;
 	
 	/**
 	 * The image used to identify this feed.
 	 */
 	@XmlElement
-	public Image image;
+	private Image image;
 	
 	/**
 	 *
 	 * The local weather conditions and forecast for a specific location.
 	 */
 	@XmlElement
-	public Item item;
+	private Item item;
 	
 	public Channel()
 	{}

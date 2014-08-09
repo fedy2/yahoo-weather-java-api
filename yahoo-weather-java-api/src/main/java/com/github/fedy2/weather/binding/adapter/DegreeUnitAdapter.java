@@ -16,10 +16,10 @@ import com.github.fedy2.weather.data.unit.DegreeUnit;
  */
 public class DegreeUnitAdapter extends XmlAdapter<String, DegreeUnit> {
 
-	protected static final String CELSIUS = "c";
-	protected static final String FAHRENHEIT = "f";
+	private static final String CELSIUS = "c";
+	private static final String FAHRENHEIT = "f";
 	
-	protected Logger logger = LoggerFactory.getLogger(DegreeUnitAdapter.class);
+	private Logger logger = LoggerFactory.getLogger(DegreeUnitAdapter.class);
 
 	/**
 	 * {@inheritDoc}

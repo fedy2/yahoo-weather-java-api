@@ -17,10 +17,10 @@ import com.github.fedy2.weather.data.unit.PressureUnit;
  */
 public class PressureUnitAdapter extends XmlAdapter<String, PressureUnit> {
 
-	protected static final String MB = "mb";
-	protected static final String IN = "in";
+	private static final String MB = "mb";
+	private static final String IN = "in";
 	
-	protected Logger logger = LoggerFactory.getLogger(PressureUnitAdapter.class);
+	private Logger logger = LoggerFactory.getLogger(PressureUnitAdapter.class);
 
 	/**
 	 * {@inheritDoc}

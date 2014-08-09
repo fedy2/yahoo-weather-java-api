@@ -3,9 +3,6 @@
  */
 package com.github.fedy2.weather.binding.adapter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
@@ -13,9 +10,7 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
  */
 public class IntegerAdapter extends XmlAdapter<String, Integer> {
 
-    protected Logger logger = LoggerFactory.getLogger(IntegerAdapter.class);
-
-    /**
+	/**
      * {@inheritDoc}
      */
     @Override

@@ -21,10 +21,10 @@ import com.github.fedy2.weather.data.unit.TimeConvention;
  */
 public class TimeAdapter extends XmlAdapter<String, Time> {
 
-	protected static final String TIME_PATTERN = "(\\d?\\d):(\\d\\d)\\s(am|pm)";
-	protected static final Pattern PATTERN = Pattern.compile(TIME_PATTERN);
+	private static final String TIME_PATTERN = "(\\d?\\d):(\\d\\d)\\s(am|pm)";
+	private static final Pattern PATTERN = Pattern.compile(TIME_PATTERN);
 
-	protected Logger logger = LoggerFactory.getLogger(TimeAdapter.class);
+	private Logger logger = LoggerFactory.getLogger(TimeAdapter.class);
 
 	/**
 	 * {@inheritDoc}

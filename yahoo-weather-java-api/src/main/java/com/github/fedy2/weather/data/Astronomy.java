@@ -22,14 +22,14 @@ public class Astronomy {
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(TimeAdapter.class)
-	protected Time sunrise;
+	private Time sunrise;
 	
 	/**
 	 * Today's sunset time.
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(TimeAdapter.class)
-	protected Time sunset;
+	private Time sunset;
 	
 	public Astronomy()
 	{}

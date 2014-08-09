@@ -17,31 +17,31 @@ public class Image {
 	 * The title of the image, for example "Yahoo! Weather".
 	 */
 	@XmlElement
-	protected String title;
+	private String title;
 	
 	/**
 	 * The URL of Yahoo! Weather.
 	 */
 	@XmlElement
-	protected String link;
+	private String link;
 	
 	/**
 	 * The URL of the image.
 	 */
 	@XmlElement
-	protected String url;
+	private String url;
 	
 	/**
 	 * The width of the image, in pixels.
 	 */
 	@XmlElement
-	protected int width;
+	private int width;
 	
 	/**
 	 * The height of the image, in pixels.
 	 */
 	@XmlElement
-	protected int height;
+	private int height;
 
 	public Image()
 	{}

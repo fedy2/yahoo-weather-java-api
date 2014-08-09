@@ -24,56 +24,56 @@ public class Item {
 	 * The forecast title and time, for example "Conditions for New York, NY at 1:51 pm EST".
 	 */
 	@XmlElement
-	protected String title;
+	private String title;
 	
 	/**
 	 * The Yahoo! Weather URL for this forecast.
 	 */
 	@XmlElement
-	protected String link;
+	private String link;
 	
 	/**
 	 * A simple summary of the current conditions and tomorrow's forecast, in HTML format, including a link to Yahoo! Weather for the full forecast.
 	 */
 	@XmlElement
-	protected String description;
+	private String description;
 	
 	/**
 	 * Unique identifier for the forecast, made up of the location ID, the date, and the time.
 	 */
 	@XmlElement
-	protected String guid;
+	private String guid;
 	
 	/**
 	 * The date and time this forecast was posted.
 	 */
 	@XmlElement
 	@XmlJavaTypeAdapter(RFC822DateAdapter.class)
-	protected Date pubDate;
+	private Date pubDate;
 	
 	/**
 	 * The latitude of the location.
 	 */
 	@XmlElement(namespace=Constants.GEO_NAMESPACE_URI, name="lat")
-	protected float geoLat;
+	private float geoLat;
 	
 	/**
 	 * The longitude of the location.
 	 */
 	@XmlElement(namespace=Constants.GEO_NAMESPACE_URI, name="long")
-	protected float geoLong;
+	private float geoLong;
 	
 	/**
 	 * The current weather conditions.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI)
-	protected Condition condition;
+	private Condition condition;
 	
 	/**
 	 * The weather forecast for specific days.
 	 */
 	@XmlElement(namespace=Constants.YWEATHER_NAMESPACE_URI, name="forecast")
-	protected List<Forecast> forecasts;
+	private List<Forecast> forecasts;
 	
 	public Item()
 	{}

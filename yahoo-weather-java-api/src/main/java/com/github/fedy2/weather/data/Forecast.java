@@ -25,38 +25,38 @@ public class Forecast {
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(WeekDayAdapter.class)
-	protected WeekDay day;
+	private WeekDay day;
 	
 	/**
 	 * The date to which this forecast applies.
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(DateAdapter.class)
-	protected Date date;
+	private Date date;
 	
 	/**
 	 * The forecasted low temperature for this day, in the units specified by the unit field in the {@link Channel} class.
 	 */
 	@XmlAttribute
-	protected int low;
+	private int low;
 	
 	/**
 	 * The forecasted high temperature for this day, in the units specified by the unit field in the {@link Channel} class.
 	 */
 	@XmlAttribute
-	protected int high;
+	private int high;
 	
 	/**
 	 * A textual description of conditions, for example, "Partly Cloudy"
 	 */
 	@XmlAttribute
-	protected String text;
+	private String text;
 	
 	/**
 	 * The condition code for this forecast.
 	 */
 	@XmlAttribute
-	protected int code;
+	private int code;
 	
 	public Forecast(){}
 	

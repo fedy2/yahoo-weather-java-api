@@ -3,17 +3,12 @@
  */
 package com.github.fedy2.weather.binding.adapter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * @author "Federico De Faveri defaveri@gmail.com"
  */
 public class FloatAdapter extends XmlAdapter<String, Float> {
-
-    protected Logger logger = LoggerFactory.getLogger(FloatAdapter.class);
 
     /**
      * {@inheritDoc}

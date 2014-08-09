@@ -9,9 +9,9 @@ package com.github.fedy2.weather.data.unit;
  */
 public class Time {
 	
-	protected int hours;
-	protected int minutes;
-	protected TimeConvention convention;
+	private int hours;
+	private int minutes;
+	private TimeConvention convention;
 	
 	/**
 	 * @param hours

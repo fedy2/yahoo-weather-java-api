@@ -16,9 +16,9 @@ import com.github.fedy2.weather.data.unit.DistanceUnit;
  */
 public class DistanceUnitAdapter extends XmlAdapter<String, DistanceUnit> {
 
-	protected static final String MI = "mi";
-	protected static final String KM = "km";
-	protected Logger logger = LoggerFactory.getLogger(DistanceUnitAdapter.class);
+	private static final String MI = "mi";
+	private static final String KM = "km";
+	private Logger logger = LoggerFactory.getLogger(DistanceUnitAdapter.class);
 	
 	/**
 	 * {@inheritDoc}

@@ -22,26 +22,26 @@ public class Condition {
 	 * A textual description of conditions, for example, "Partly Cloudy"
 	 */
 	@XmlAttribute
-	protected String text;
+	private String text;
 	
 	/**
 	 * The condition code for this forecast.
 	 */
 	@XmlAttribute
-	protected int code;
+	private int code;
 	
 	/**
 	 * The current temperature, in the units specified by the units field of {@link Channel} class.
 	 */
 	@XmlAttribute
-	protected int temp;
+	private int temp;
 	
 	/**
 	 * The current date and time for which this forecast applies.
 	 */
 	@XmlAttribute
 	@XmlJavaTypeAdapter(RFC822DateAdapter.class)
-	protected Date date;
+	private Date date;
 
 	public Condition()
 	{}

@@ -16,19 +16,19 @@ public class Location {
 	 * City name.
 	 */
 	@XmlAttribute
-	protected String city;
+	private String city;
 	
 	/**
 	 * State, territory, or region, if given
 	 */
 	@XmlAttribute
-	protected String region;
+	private String region;
 	
 	/**
 	 * Two-character country code.
 	 */
 	@XmlAttribute
-	protected String country;
+	private String country;
 
 	public Location(){}
 	

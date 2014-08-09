@@ -19,9 +19,9 @@ public class SpeedUnitAdapter extends XmlAdapter<String, SpeedUnit> {
 	/**
 	 * Official documentation says kph but the service returns km/h.
 	 */
-	protected static final String KMH = "km/h";
-	protected static final String MPH = "mph";
-	protected Logger logger = LoggerFactory.getLogger(SpeedUnitAdapter.class);
+	private static final String KMH = "km/h";
+	private static final String MPH = "mph";
+	private Logger logger = LoggerFactory.getLogger(SpeedUnitAdapter.class);
 
 	/**
 	 * {@inheritDoc}

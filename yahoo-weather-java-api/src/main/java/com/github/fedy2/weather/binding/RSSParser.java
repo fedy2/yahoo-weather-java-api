@@ -17,7 +17,7 @@ import com.github.fedy2.weather.data.Rss;
  */
 public class RSSParser {
 
-	protected Unmarshaller unmarshaller;
+	private Unmarshaller unmarshaller;
 
 	public RSSParser() throws JAXBException
 	{

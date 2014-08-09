@@ -16,9 +16,9 @@ import java.util.Locale;
  */
 public class DateAdapter extends XmlAdapter<String, Date> {
 
-    protected Logger logger = LoggerFactory.getLogger(DateAdapter.class);
+	private Logger logger = LoggerFactory.getLogger(DateAdapter.class);
 
-    protected SimpleDateFormat dateFormat = new SimpleDateFormat("d MMM yyyy", Locale.US);
+	private SimpleDateFormat dateFormat = new SimpleDateFormat("d MMM yyyy", Locale.US);
 
     /**
      * {@inheritDoc}

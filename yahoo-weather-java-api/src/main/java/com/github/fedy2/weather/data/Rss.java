@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 public class Rss {
 	
 	@XmlElement
-	protected Wrapper<Channel> results;
+	private Wrapper<Channel> results;
 	
 	public Rss()
 	{}

@@ -16,7 +16,7 @@ import com.github.fedy2.weather.data.unit.WeekDay;
  */
 public class WeekDayAdapter extends XmlAdapter<String, WeekDay> {
 	
-	protected Logger logger = LoggerFactory.getLogger(WeekDayAdapter.class);
+	private Logger logger = LoggerFactory.getLogger(WeekDayAdapter.class);
 
 	@Override
 	public WeekDay unmarshal(String v) throws Exception {

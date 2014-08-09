@@ -17,10 +17,10 @@ import com.github.fedy2.weather.data.unit.BarometricPressureState;
  */
 public class BarometricPressureStateAdapter extends	XmlAdapter<Integer, BarometricPressureState> {
 
-	protected static final int FALLING = 2;
-	protected static final int RISING = 1;
-	protected static final int STEADY = 0;
-	protected Logger logger = LoggerFactory.getLogger(BarometricPressureStateAdapter.class);
+	private static final int FALLING = 2;
+	private static final int RISING = 1;
+	private static final int STEADY = 0;
+	private Logger logger = LoggerFactory.getLogger(BarometricPressureStateAdapter.class);
 	
 	/**
 	 * {@inheritDoc}
