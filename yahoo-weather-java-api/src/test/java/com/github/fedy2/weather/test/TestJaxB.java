@@ -29,7 +29,7 @@ public class TestJaxB {
 		Rss rss = (Rss)unmarshaller.unmarshal(new FileReader("src/test/resources/xml/sample.xml"));
 		
 
-		System.out.println(rss.getChannel());
+		System.out.println(rss.getChannels());
 		
 	}
 

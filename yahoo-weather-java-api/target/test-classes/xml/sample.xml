@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
-			<channel>
-		
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" yahoo:count="1" yahoo:created="2014-08-09T15:09:15Z" yahoo:lang="it-IT"><results><channel>
+
 <title>Yahoo! Weather - Sunnyvale, CA</title>
-<link>http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_c.html</link>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_f.html</link>
 <description>Yahoo! Weather for Sunnyvale, CA</description>
 <language>en-us</language>
-<lastBuildDate>Fri, 23 Dec 2011 6:56 am PST</lastBuildDate>
+<lastBuildDate>Sat, 09 Aug 2014 6:54 am PDT</lastBuildDate>
 <ttl>60</ttl>
-<yweather:location city="Sunnyvale" region="CA"   country="United States"/>
-<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
-<yweather:wind chill="3"   direction="0"   speed="0" />
-<yweather:atmosphere humidity="54"  visibility="16.09"  pressure="1034.8"  rising="1" />
-<yweather:astronomy sunrise="7:18 am"   sunset="4:54 pm"/>
+<yweather:location xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" city="Sunnyvale" country="United States" region="CA"/>
+<yweather:units xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" distance="mi" pressure="in" speed="mph" temperature="F"/>
+<yweather:wind xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" chill="59" direction="0" speed="0"/>
+<yweather:atmosphere xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" humidity="83" pressure="29.96" rising="1" visibility="10"/>
+<yweather:astronomy xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" sunrise="6:18 am" sunset="8:06 pm"/>
 <image>
 <title>Yahoo! Weather</title>
 <width>142</width>
@@ -21,27 +20,32 @@
 <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
 </image>
 <item>
-<title>Conditions for Sunnyvale, CA at 6:56 am PST</title>
-<geo:lat>37.37</geo:lat>
-<geo:long>-122.04</geo:long>
-<link>http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_c.html</link>
-<pubDate>Fri, 23 Dec 2011 6:56 am PST</pubDate>
-<yweather:condition  text="Fair"  code="33"  temp="3"  date="Fri, 23 Dec 2011 6:56 am PST" />
+<title>Conditions for Sunnyvale, CA at 6:54 am PDT</title>
+<geo:lat xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">37.37</geo:lat>
+<geo:long xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">-122.04</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_f.html</link>
+<pubDate>Sat, 09 Aug 2014 6:54 am PDT</pubDate>
+<yweather:condition xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="34" date="Sat, 09 Aug 2014 6:54 am PDT" temp="59" text="Fair"/>
 <description><![CDATA[
-<img src="http://l.yimg.com/a/i/us/we/52/33.gif"/><br />
+<img src="http://l.yimg.com/a/i/us/we/52/34.gif"/><br />
 <b>Current Conditions:</b><br />
-Fair, 3 C<BR />
+Fair, 59 F<BR />
 <BR /><b>Forecast:</b><BR />
-Fri - Partly Cloudy. High: 18 Low: 3<br />
-Sat - Sunny. High: 19 Low: 5<br />
+Sat - AM Clouds/PM Sun. High: 78 Low: 58<br />
+Sun - AM Clouds/PM Sun. High: 77 Low: 58<br />
+Mon - AM Clouds/PM Sun. High: 79 Low: 58<br />
+Tue - AM Clouds/PM Sun. High: 77 Low: 59<br />
+Wed - AM Clouds/PM Sun. High: 80 Low: 60<br />
 <br />
-<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_f.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
 (provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
 ]]></description>
-<yweather:forecast day="Fri" date="23 Dec 2011" low="3" high="18" text="Partly Cloudy" code="30" />
-<yweather:forecast day="Sat" date="24 Dec 2011" low="5" high="19" text="Sunny" code="32" />
-<guid isPermaLink="false">USCA1116_2011_12_24_7_00_PST</guid>
+<yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="9 Aug 2014" day="Sat" high="78" low="58" text="AM Clouds/PM Sun"/>
+<yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="10 Aug 2014" day="Sun" high="77" low="58" text="AM Clouds/PM Sun"/>
+<yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="11 Aug 2014" day="Mon" high="79" low="58" text="AM Clouds/PM Sun"/>
+<yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="12 Aug 2014" day="Tue" high="77" low="59" text="AM Clouds/PM Sun"/>
+<yweather:forecast xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" code="30" date="13 Aug 2014" day="Wed" high="80" low="60" text="AM Clouds/PM Sun"/>
+<guid isPermaLink="false">USCA1116_2014_08_13_7_00_PDT</guid>
 </item>
-</channel>
-</rss>
-<!-- api9.weather.ch1.yahoo.com compressed/chunked Fri Dec 23 07:50:46 PST 2011 -->
+</channel></results></query><!-- total: 65 -->
+<!-- engine6.yql.bf1.yahoo.com -->

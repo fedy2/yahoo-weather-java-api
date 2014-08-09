@@ -4,6 +4,7 @@
 package com.github.fedy2.weather.test;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.xml.bind.JAXBException;
 
@@ -24,8 +25,12 @@ public class Example {
 	 */
 	public static void main(String[] args) throws JAXBException, IOException {
 		YahooWeatherService service = new YahooWeatherService();
-		Channel channel = service.getForecast("670807", DegreeUnit.CELSIUS);
-		System.out.println(channel.getDescription());
+		Channel result = service.getForecast("670807", DegreeUnit.CELSIUS);
+		System.out.println(result.getDescription());
+		System.out.println(result.getTitle());
+		
+		List<Channel> channels = service.getForecastForLocation("Oristano", DegreeUnit.CELSIUS).first(3);
+		for (Channel channel:channels) System.out.println(channel.getTitle());
 	}
 
 }
