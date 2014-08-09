@@ -18,7 +18,7 @@ Dependency declaration:
     <dependency>
          <groupId>com.github.fedy2</groupId>
          <artifactId>yahoo-weather-java-api</artifactId>
-         <version>1.1.0</version>
+         <version>1.2.0</version>
     </dependency>
 
 Changelog:
