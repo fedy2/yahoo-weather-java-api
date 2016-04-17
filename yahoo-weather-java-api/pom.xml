@@ -11,13 +11,13 @@
 	<description>A Java library for the yahoo weather RSS feed service</description>
 	<url>https://github.com/crea-doo/yahoo-weather-java-api</url>
 
-	<!--licenses>
+	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
 			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
-	</licenses-->
+	</licenses>
 
 	<prerequisites>
 		<maven>3.1.1</maven>
