@@ -5,7 +5,7 @@
 
 	<groupId>at.crea-doo.util</groupId>
 	<artifactId>yahoo-weather-java-api</artifactId>
-	<version>2.0.0</version>
+	<version>2.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Yahoo Weather Java API</name>
 	<description>A Java library for the yahoo weather RSS feed service</description>
@@ -36,7 +36,7 @@
 		<connection>scm:git:https://github.com/crea-doo/yahoo-weather-java-api.git</connection>
 		<developerConnection>scm:git:https://github.com/crea-doo/yahoo-weather-java-api.git</developerConnection>
 		<url>https://github.com/crea-doo/yahoo-weather-java-api</url>
-	  <tag>yahoo-weather-java-api-2.0.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<developers>
