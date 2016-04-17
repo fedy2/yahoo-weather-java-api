@@ -28,3 +28,6 @@ Changelog:
     * 1.1.0 Updated data model: Atmosphere and Wind numeric values have been replaced by corresponding Classes (int to Integer and float to Float) in order to support "missing" values in Weather system response.
     * 1.0.1 fixed issues on Date parsing and local settings
     * 1.0.0 first release
+
+
+[![Build Status](https://travis-ci.org/crea-doo/yahoo-weather-java-api.svg?branch=master)](https://travis-ci.org/crea-doo/yahoo-weather-java-api)
