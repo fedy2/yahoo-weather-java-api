@@ -7,6 +7,8 @@ The library is a lightweight wrapper for the Yahoo Weather API (http://developer
 
 The only required dependency is the slf4j-api library.
 
+**[This is a fork of https://github.com/fedy2/yahoo-weather-java-api which enables compatibility to the latest Yahoo API changes]**
+
 Usage example:
 
     YahooWeatherService service = new YahooWeatherService();
