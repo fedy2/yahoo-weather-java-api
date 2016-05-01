@@ -7,8 +7,6 @@ The library is a lightweight wrapper for the Yahoo Weather API (http://developer
 
 The only required dependency is the slf4j-api library.
 
-**[This is a fork of https://github.com/fedy2/yahoo-weather-java-api which enables compatibility to the latest Yahoo API changes]**
-
 Usage example:
 
     YahooWeatherService service = new YahooWeatherService();
@@ -18,7 +16,7 @@ Usage example:
 Dependency declaration:
 
     <dependency>
-         <groupId>at.crea-doo.util</groupId>
+         <groupId>com.github.fedy2</groupId>
          <artifactId>yahoo-weather-java-api</artifactId>
          <version>2.0.0</version>
     </dependency>
@@ -32,4 +30,4 @@ Changelog:
     * 1.0.0 first release
 
 
-[![Build Status](https://travis-ci.org/crea-doo/yahoo-weather-java-api.svg?branch=master)](https://travis-ci.org/crea-doo/yahoo-weather-java-api)
+[![Build Status](https://travis-ci.org/fedy2/yahoo-weather-java-api.svg?branch=yql)](https://travis-ci.org/fedy2/yahoo-weather-java-api)
