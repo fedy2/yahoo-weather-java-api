@@ -4,4 +4,3 @@ jdk:
   - oraclejdk8
   - openjdk6
   - openjdk7
-script: cd yahoo-weather-java-api

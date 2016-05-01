@@ -192,8 +192,7 @@
 							<autoVersionSubmodules>true</autoVersionSubmodules>
 							<useReleaseProfile>false</useReleaseProfile>
 							<releaseProfiles>release</releaseProfiles>
-							<goals>deploy,perform</goals>
-							<pomFileName>yahoo-weather-java-api/pom.xml</pomFileName>
+							<goals>deploy</goals>
 						</configuration>
 					</plugin>
 					<plugin>
