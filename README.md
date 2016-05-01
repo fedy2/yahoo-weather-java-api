@@ -1,4 +1,4 @@
-yahoo-weather-java-api
+yahoo-weather-java-api [![Build Status](https://travis-ci.org/fedy2/yahoo-weather-java-api.svg)](https://travis-ci.org/fedy2/yahoo-weather-java-api)
 ======================
 
 A Java library for the yahoo weather RSS feed service
@@ -28,6 +28,3 @@ Changelog:
     * 1.1.0 Updated data model: Atmosphere and Wind numeric values have been replaced by corresponding Classes (int to Integer and float to Float) in order to support "missing" values in Weather system response.
     * 1.0.1 fixed issues on Date parsing and local settings
     * 1.0.0 first release
-
-
-[![Build Status](https://travis-ci.org/fedy2/yahoo-weather-java-api.svg?branch=yql)](https://travis-ci.org/fedy2/yahoo-weather-java-api)
