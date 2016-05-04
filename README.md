@@ -22,6 +22,7 @@ Dependency declaration:
     </dependency>
 
 Changelog:
+
     * 2.0.1 Fixes RFC822 date parsing. Fixed lastBuildDate field parsing.
     * 2.0.0 Changed whole implementation to use YQL for querying
     * 1.2.0 YahooWeatherService constructor now accepts a Proxy to be used during service connections
