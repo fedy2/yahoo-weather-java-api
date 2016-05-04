@@ -9,8 +9,10 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import com.github.fedy2.weather.binding.Constants;
+import com.github.fedy2.weather.binding.adapter.RFC822DateAdapter;
 
 /**
  * @author "Federico De Faveri defaveri@gmail.com"
@@ -48,6 +50,7 @@ public class Channel {
 	 * The last time the feed was updated. The format is in the date format defined by RFC822 Section 5, for example Mon, 256 Sep 17:25:18 -0700.
 	 */
 	@XmlElement
+	@XmlJavaTypeAdapter(RFC822DateAdapter.class)
 	private Date lastBuildDate;
 
 	/**
