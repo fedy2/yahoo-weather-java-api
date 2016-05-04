@@ -25,8 +25,8 @@ public class RFC822DateAdapter extends XmlAdapter<String, Date> {
             new SimpleDateFormat("d MMM yy HH:mm:ss z", Locale.US),
             new SimpleDateFormat("d MMM yyyy HH:mm z", Locale.US),
             new SimpleDateFormat("d MMM yyyy HH:mm:ss z", Locale.US),
-            //exception to RFC 822 format used by Yahoo "Thu, 22 Dec 2011 1:50 pm CET"
-            new SimpleDateFormat("EEE, d MMM yyyy HH:mm a z", Locale.US)};
+            //exception to RFC 822 format used by Yahoo "Thu, 22 Dec 2011 01:50 pm CET"
+            new SimpleDateFormat("EEE, d MMM yyyy hh:mm a z", Locale.US)};
 
 	private Logger logger = LoggerFactory.getLogger(RFC822DateAdapter.class);
 
