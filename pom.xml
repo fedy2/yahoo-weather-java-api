@@ -5,7 +5,7 @@
 
 	<groupId>com.github.fedy2</groupId>
 	<artifactId>yahoo-weather-java-api</artifactId>
-	<version>2.0.1</version>
+	<version>2.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Yahoo Weather Java API</name>
 	<description>A Java library for the yahoo weather RSS feed service</description>
@@ -36,7 +36,7 @@
 		<connection>scm:git:https://github.com/fedy2/yahoo-weather-java-api.git</connection>
 		<developerConnection>scm:git:https://github.com/fedy2/yahoo-weather-java-api.git</developerConnection>
 		<url>https://github.com/fedy2/yahoo-weather-java-api</url>
-		<tag>yahoo-weather-java-api-2.0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<developers>
