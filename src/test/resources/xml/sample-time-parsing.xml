@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+    yahoo:count="1" yahoo:created="2016-07-13T13:07:56Z" yahoo:lang="de">
+    <results>
+        <channel>
+            <yweather:units
+                xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                distance="mi" pressure="in" speed="mph" temperature="F"/>
+            <title>Yahoo! Weather - Vienna, Vienna, AT</title>
+            <link>http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-551801/</link>
+            <description>Yahoo! Weather for Vienna, Vienna, AT</description>
+            <language>en-us</language>
+            <lastBuildDate>Wed, 13 Jul 2016 03:07 PM CEST</lastBuildDate>
+            <ttl>60</ttl>
+            <yweather:location
+                xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                city="Vienna" country="Austria" region=" Vienna"/>
+            <yweather:wind
+                xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                chill="72" direction="325" speed="7"/>
+            <yweather:atmosphere
+                xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                humidity="63" pressure="986.0" rising="0" visibility="16.1"/>
+            <yweather:astronomy
+                xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                sunrise="5:9 am" sunset="8:51 pm"/>
+            <image>
+                <title>Yahoo! Weather</title>
+                <width>142</width>
+                <height>18</height>
+                <link>http://weather.yahoo.com</link>
+                <url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+            </image>
+            <item>
+                <title>Conditions for Vienna, Vienna, AT at 01:00 PM CEST</title>
+                <geo:lat xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">48.202541</geo:lat>
+                <geo:long xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">16.368799</geo:long>
+                <link>http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-551801/</link>
+                <pubDate>Wed, 13 Jul 2016 01:00 PM CEST</pubDate>
+                <yweather:condition
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="28" date="Wed, 13 Jul 2016 01:00 PM CEST"
+                    temp="72" text="Mostly Cloudy"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="4" date="13 Jul 2016" day="Wed" high="72"
+                    low="62" text="Thunderstorms"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="47" date="14 Jul 2016" day="Thu" high="65"
+                    low="56" text="Scattered Thunderstorms"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="30" date="15 Jul 2016" day="Fri" high="67"
+                    low="54" text="Partly Cloudy"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="28" date="16 Jul 2016" day="Sat" high="69"
+                    low="56" text="Mostly Cloudy"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="30" date="17 Jul 2016" day="Sun" high="72"
+                    low="57" text="Partly Cloudy"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="30" date="18 Jul 2016" day="Mon" high="77"
+                    low="62" text="Partly Cloudy"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="30" date="19 Jul 2016" day="Tue" high="77"
+                    low="61" text="Partly Cloudy"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="47" date="20 Jul 2016" day="Wed" high="76"
+                    low="59" text="Scattered Thunderstorms"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="30" date="21 Jul 2016" day="Thu" high="80"
+                    low="60" text="Partly Cloudy"/>
+                <yweather:forecast
+                    xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0"
+                    code="30" date="22 Jul 2016" day="Fri" high="82"
+                    low="60" text="Partly Cloudy"/>
+                <description>&lt;![CDATA[&lt;img src="http://l.yimg.com/a/i/us/we/52/28.gif"/&gt;
+&lt;BR /&gt;
+&lt;b&gt;Current Conditions:&lt;/b&gt;
+&lt;BR /&gt;Mostly Cloudy
+&lt;BR /&gt;
+&lt;BR /&gt;
+&lt;b&gt;Forecast:&lt;/b&gt;
+&lt;BR /&gt; Wed - Thunderstorms. High: 72Low: 62
+&lt;BR /&gt; Thu - Scattered Thunderstorms. High: 65Low: 56
+&lt;BR /&gt; Fri - Partly Cloudy. High: 67Low: 54
+&lt;BR /&gt; Sat - Mostly Cloudy. High: 69Low: 56
+&lt;BR /&gt; Sun - Partly Cloudy. High: 72Low: 57
+&lt;BR /&gt;
+&lt;BR /&gt;
+&lt;a href="http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-551801/"&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;
+&lt;BR /&gt;
+&lt;BR /&gt;
+(provided by &lt;a href="http://www.weather.com" &gt;The Weather Channel&lt;/a&gt;)
+&lt;BR /&gt;
+]]&gt;</description>
+                <guid isPermaLink="false"/>
+            </item>
+        </channel>
+    </results>
+</query>
