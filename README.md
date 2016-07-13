@@ -3,8 +3,8 @@ yahoo-weather-java-api [![Build Status](https://travis-ci.org/fedy2/yahoo-weathe
 
 A Java library for the yahoo weather RSS feed service.
 
-[![Issue Stats](http://issuestats.com/github/fedy2/yahoo-weather-java-api/badge/pr?style=flat)](http://issuestats.com/github/fedy2/yahoo-weather-java-api)
-[![Issue Stats](http://issuestats.com/github/fedy2/yahoo-weather-java-api/badge/issue?style=flat)](http://issuestats.com/github/fedy2/yahoo-weather-java-api)
+[![Issue Stats](http://issuestats.com/github/fedy2/yahoo-weather-java-api/badge/pr)](http://issuestats.com/github/fedy2/yahoo-weather-java-api)
+[![Issue Stats](http://issuestats.com/github/fedy2/yahoo-weather-java-api/badge/issue)](http://issuestats.com/github/fedy2/yahoo-weather-java-api)
 
 The library is a lightweight wrapper for the Yahoo Weather API (http://developer.yahoo.com/weather/).
 
