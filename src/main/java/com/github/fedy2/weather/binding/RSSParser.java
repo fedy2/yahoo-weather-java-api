@@ -3,13 +3,12 @@
  */
 package com.github.fedy2.weather.binding;
 
-import java.io.StringReader;
+import com.github.fedy2.weather.data.Rss;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-
-import com.github.fedy2.weather.data.Rss;
+import java.io.StringReader;
 
 /**
  * @author "Federico De Faveri defaveri@gmail.com"
@@ -25,9 +24,9 @@ public class RSSParser {
 		unmarshaller = context.createUnmarshaller();
 	}
 
-	public Rss parse(String xml) throws JAXBException
+	public <T> Rss<T> parse(String xml) throws JAXBException
 	{
-		return (Rss)unmarshaller.unmarshal(new StringReader(xml));
+		return (Rss<T>)unmarshaller.unmarshal(new StringReader(xml));
 	}
 	
 }
