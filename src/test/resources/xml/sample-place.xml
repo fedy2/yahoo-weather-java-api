@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+       yahoo:count="10" yahoo:created="2016-10-13T11:38:13Z" yahoo:lang="en-us">
+    <results>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="DE" type="Country" woeid="23424829">Germany</country>
+            <admin1 code="DE-HH" type="Land" woeid="2345484">Hamburg</admin1>
+            <admin2 code="" type="District" woeid="12596781">Stadtkreis Hamburg</admin2>
+            <admin3/>
+            <woeid>656958</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="DE" type="Country" woeid="23424829">Germany</country>
+            <admin1 code="DE-HH" type="Land" woeid="2345484">Hamburg</admin1>
+            <admin2/>
+            <admin3/>
+            <woeid>2345484</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-NY" type="State" woeid="2347591">New York</admin1>
+            <admin2 code="" type="County" woeid="12589326">Erie</admin2>
+            <admin3/>
+            <woeid>2416511</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-MI" type="State" woeid="2347581">Michigan</admin1>
+            <admin2 code="" type="County" woeid="12588760">Livingston</admin2>
+            <admin3/>
+            <woeid>2416506</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-PA" type="State" woeid="2347597">Pennsylvania</admin1>
+            <admin2 code="" type="County" woeid="12589733">Berks</admin2>
+            <admin3/>
+            <woeid>2416523</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-AR" type="State" woeid="2347562">Arkansas</admin1>
+            <admin2 code="" type="County" woeid="12587596">Ashley</admin2>
+            <admin3/>
+            <woeid>2416525</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-NJ" type="State" woeid="2347589">New Jersey</admin1>
+            <admin2 code="" type="County" woeid="12589276">Sussex</admin2>
+            <admin3/>
+            <woeid>2416510</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-MN" type="State" woeid="2347582">Minnesota</admin1>
+            <admin2 code="" type="County" woeid="12588806">Carver</admin2>
+            <admin3/>
+            <woeid>2416507</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-IL" type="State" woeid="2347572">Illinois</admin1>
+            <admin2 code="" type="County" woeid="12588084">Calhoun</admin2>
+            <admin3/>
+            <woeid>2416502</woeid>
+        </place>
+        <place xmlns="http://where.yahooapis.com/v1/schema.rng">
+            <name>Hamburg</name>
+            <country code="US" type="Country" woeid="23424977">United States</country>
+            <admin1 code="US-LA" type="State" woeid="2347577">Louisiana</admin1>
+            <admin2 code="" type="County" woeid="12588600">Avoyelles Parish</admin2>
+            <admin3/>
+            <woeid>2416526</woeid>
+        </place>
+    </results>
+</query>
