@@ -3,28 +3,21 @@
  */
 package com.github.fedy2.weather;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
+import com.github.fedy2.weather.binding.RSSParser;
+import com.github.fedy2.weather.data.Channel;
+import com.github.fedy2.weather.data.Place;
+import com.github.fedy2.weather.data.Rss;
+import com.github.fedy2.weather.data.unit.DegreeUnit;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.xml.bind.JAXBException;
+import java.io.*;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.List;
-
-import javax.xml.bind.JAXBException;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.github.fedy2.weather.binding.RSSParser;
-import com.github.fedy2.weather.data.Channel;
-import com.github.fedy2.weather.data.Rss;
-import com.github.fedy2.weather.data.unit.DegreeUnit;
 
 /**
  * Main access point for the Yahoo weather service.
@@ -91,11 +84,17 @@ public class YahooWeatherService {
 	 */
 	public Channel getForecast(String woeid, DegreeUnit unit) throws JAXBException, IOException
 	{
-		QueryBuilder query = new QueryBuilder();
+		QueryBuilder query = new QueryBuilder(QueryBuilder.Type.FORECAST);
 		query.woeid(woeid).unit(unit);
-		List<Channel> channels = execute(query.build());
+		List<Channel> channels = executeForecastQuery(query.build());
 		if (channels.isEmpty()) throw new IllegalStateException("No results from the service.");
 		return channels.get(0);
+	}
+
+	public List<Place> getPlaces(String searchString) throws IOException, JAXBException {
+		QueryBuilder query = new QueryBuilder(QueryBuilder.Type.PLACE);
+		query.searchString(searchString);
+		return executePlaceQuery(query.build());
 	}
 
 	/**
@@ -106,7 +105,7 @@ public class YahooWeatherService {
 	 */
 	public LimitDeclaration getForecastForLocation(String location, DegreeUnit unit)
 	{
-		final QueryBuilder query = new QueryBuilder();
+		final QueryBuilder query = new QueryBuilder(QueryBuilder.Type.FORECAST);
 		query.location(location).unit(unit);
 
 		return new LimitDeclaration() {
@@ -114,18 +113,18 @@ public class YahooWeatherService {
 			@Override
 			public List<Channel> last(int count) throws JAXBException, IOException {
 				query.last(count);
-				return execute(query.build());
+				return executeForecastQuery(query.build());
 			}
 
 			@Override
 			public List<Channel> first(int count) throws JAXBException, IOException {
 				query.first(count);
-				return execute(query.build());
+				return executeForecastQuery(query.build());
 			}
 
 			@Override
 			public List<Channel> all() throws JAXBException, IOException {
-				return execute(query.build());
+				return executeForecastQuery(query.build());
 			}
 		};
 	}
@@ -147,11 +146,18 @@ public class YahooWeatherService {
 		return url.toString();
 	}
 
-	private List<Channel> execute(String query) throws IOException, JAXBException {
+	private List<Channel> executeForecastQuery(String query) throws IOException, JAXBException {
 		String url = composeUrl(query);
 		String xml = retrieveRSS(url);
-		Rss rss = parser.parse(xml);
-		return rss.getChannels();
+		Rss<Channel> rss = parser.parse(xml);
+		return rss.getResult();
+	}
+
+	private List<Place> executePlaceQuery(String query) throws IOException, JAXBException {
+		String url = composeUrl(query);
+		String xml = retrieveRSS(url);
+		Rss<Place> rss = parser.parse(xml);
+		return rss.getResult();
 	}
 
 	/**

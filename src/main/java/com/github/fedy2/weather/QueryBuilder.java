@@ -3,11 +3,11 @@
  */
 package com.github.fedy2.weather;
 
+import com.github.fedy2.weather.data.unit.DegreeUnit;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import com.github.fedy2.weather.data.unit.DegreeUnit;
 
 /**
  * An helper for query building.
@@ -22,20 +22,31 @@ public class QueryBuilder {
 	private static final String LAST_PARAMETER_NAME = "tail";
 
 	private String unitCondition;
-	private String woeidCondition;
+	private String condition;
+	private String select;
 	private Map<String, String> limits;
 
-	public QueryBuilder() {
+	public static enum Type {
+		FORECAST,
+		PLACE
+	}
+
+	public QueryBuilder(Type type) {
 		limits = new HashMap<String, String>();
+		if (type == Type.FORECAST) {
+			select = "SELECT * FROM weather.forecast ";
+		} else {
+			select = "SELECT name, woeid, country, admin1, admin2, admin3 FROM geo.places ";
+		}
 	}
 
 	public QueryBuilder woeid(String woeid) {
-		woeidCondition = WOEID_PARAMETER_NAME + "=" + "\"" + woeid +"\"";
+		condition = WOEID_PARAMETER_NAME + "=" + "\"" + woeid +"\"";
 		return this;
 	}
 
 	public QueryBuilder location(String location) {
-		woeidCondition = WOEID_PARAMETER_NAME + " in (select woeid from geo.places where text=\""+location+"\")";
+		condition = WOEID_PARAMETER_NAME + " in (select woeid from geo.places where text=\""+location+"\")";
 		return this;
 	}
 
@@ -56,10 +67,16 @@ public class QueryBuilder {
 		limits.put(LAST_PARAMETER_NAME, String.valueOf(limit));
 		return this;
 	}
-	
+
+	public QueryBuilder searchString(String search) {
+		condition = "text = \"" + search + "\"";
+		return this;
+	}
+
 	public String build() {
-		StringBuilder query = new StringBuilder("SELECT * FROM weather.forecast WHERE ");
-		query.append(woeidCondition).append(" ");
+		StringBuilder query = new StringBuilder(select);
+		query.append("WHERE").append(" ");
+		query.append(condition).append(" ");
 		if (unitCondition!=null) query.append("AND ").append(unitCondition).append(" ");
 		
 		for (Entry<String, String> limit:limits.entrySet()) query.append("| ").append(limit.getKey()).append("(count=").append(limit.getValue()).append(") ");

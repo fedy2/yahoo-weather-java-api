@@ -3,14 +3,14 @@
  */
 package com.github.fedy2.weather.test;
 
-import java.io.IOException;
-import java.util.List;
-
-import javax.xml.bind.JAXBException;
-
 import com.github.fedy2.weather.YahooWeatherService;
 import com.github.fedy2.weather.data.Channel;
+import com.github.fedy2.weather.data.Place;
 import com.github.fedy2.weather.data.unit.DegreeUnit;
+
+import javax.xml.bind.JAXBException;
+import java.io.IOException;
+import java.util.List;
 
 /**
  * @author "Federico De Faveri defaveri@gmail.com"
@@ -31,6 +31,9 @@ public class Example {
 		
 		List<Channel> channels = service.getForecastForLocation("Oristano", DegreeUnit.CELSIUS).first(3);
 		for (Channel channel:channels) System.out.println(channel.getTitle());
+
+		List<Place> places = service.getPlaces("Hamburg");
+		for (Place place : places) System.out.println(place);
 	}
 
 }

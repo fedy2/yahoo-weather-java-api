@@ -13,6 +13,12 @@ Usage example:
     Channel channel = service.getForecast("2502265", DegreeUnit.CELSIUS);
     System.out.println(channel.getDescription());
 
+Finding places:
+
+    YahooWeatherService service = new YahooWeatherService();
+    List<Place> places = service.getPlaces("Hamburg");
+    places.forEach(System.out::println);
+
 Dependency declaration:
 
     <dependency>
@@ -23,6 +29,7 @@ Dependency declaration:
 
 Changelog:
 
+    * 2.x.x Allows searching for places (in order to find a woeid to use)
     * 2.0.2 Fixes time parsing when minutes are not padded.
     * 2.0.1 Fixes RFC822 date parsing. Fixed lastBuildDate field parsing.
     * 2.0.0 Changed whole implementation to use YQL for querying
