@@ -1,6 +1,8 @@
 yahoo-weather-java-api [![Build Status](https://travis-ci.org/fedy2/yahoo-weather-java-api.svg)](https://travis-ci.org/fedy2/yahoo-weather-java-api)
 ======================
 
+**Current version is not working because the yql service by Yahoo has been dismissed (https://developer.yahoo.com/yql/)**
+
 A Java library for the yahoo weather service.
 
 The library is a lightweight wrapper for the Yahoo Weather API (http://developer.yahoo.com/weather/).
